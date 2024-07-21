@@ -18,6 +18,8 @@ This is a Music Player App built by `Diego Tech` by using:
 - Prettier
 - React Native Safe Area Context
 - React Native Screens
+- Expo Blur
+- Expo Vector Icons
 
 ### One Message for EveryOne 🔥
 
