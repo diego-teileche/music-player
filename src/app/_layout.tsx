@@ -1,23 +1,23 @@
+import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-export default function App() {
+const App = () => {
 	return (
-		<View style={styles.container}>
-			<StatusBar style="light" />
-			<Text style={styles.text}>Diego!!</Text>
-		</View>
+		<SafeAreaProvider>
+			<RootNavigation />
+
+			<StatusBar style="auto" />
+		</SafeAreaProvider>
 	)
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center',
-		backgroundColor: '#0f0f0f',
-	},
-	text: {
-		color: '#f0f0f0',
-	},
-})
+const RootNavigation = () => {
+	return (
+		<Stack>
+			<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+		</Stack>
+	)
+}
+
+export default App
