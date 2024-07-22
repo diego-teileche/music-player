@@ -6,7 +6,6 @@ const App = () => {
 	return (
 		<SafeAreaProvider>
 			<RootNavigation />
-
 			<StatusBar style="auto" />
 		</SafeAreaProvider>
 	)
