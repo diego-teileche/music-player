@@ -1,3 +1,5 @@
+# NOT FINISHED. IT DOES NOT WORK.
+
 # About the App 📱
 
 This is a Music Player App built by `Diego Tech` by using:
